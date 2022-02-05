@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  // Typescript propertyName : Type
+  text: String;
+
+  constructor() {
+    this.text = "Initial text value";
+  }
+
+  onTextChanged() {
+    this.text = "Text changes!";
+  }
 
 }
